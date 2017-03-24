@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="StockAppFX.jnlp">
+  <information>
+    <title>StockAppFX</title>
+    <vendor>Bert</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="StockAppFX.jar" size="48924" download="eager" />
+    <jar href="lib\YahooFinanceAPI-3.6.0-javadoc.jar" size="160113" download="eager" />
+    <jar href="lib\YahooFinanceAPI-3.6.0-sources.jar" size="27496" download="eager" />
+    <jar href="lib\YahooFinanceAPI-3.6.0.jar" size="45771" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="StockAppFX" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="stockappfx.StockAppFX"  name="StockAppFX" />
+  <update check="always"/>
+</jnlp>

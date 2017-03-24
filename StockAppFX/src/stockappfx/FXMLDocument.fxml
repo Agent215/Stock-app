@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.*?>
+<?import javafx.scene.chart.*?>
+
+<GridPane id="GridPane" xmlns:fx="http://javafx.com/fxml" alignment="top_center" hgap="10" vgap="30"
+          styleClass="root" fx:controller="stockappfx.FXMLDocumentController">
+    <gridLinesVisible>false</gridLinesVisible> 
+    <padding>
+        <Insets top="75" right="50" bottom="75" left="50"/>
+    </padding>
+
+
+    <Label
+ alignment="top_right" 
+        GridPane.columnSpan="3"
+        fx:id="Title"
+        text="Stock Data App"
+        GridPane.columnIndex="0" GridPane.rowIndex="0"
+        />
+    <LineChart fx:id="graph"
+        
+               GridPane.columnIndex="0" GridPane.rowIndex="5">
+        <xAxis>
+            <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+            <NumberAxis side="LEFT" />
+        </yAxis>
+    </LineChart>
+      
+  
+   
+
+    <Text
+        fx:id="stockName"
+        text="Stock Name:"
+        GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    
+    <Text
+        fx:id="StockSymbol"
+        text="Stock Symbol"
+        GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    
+    
+    <Text
+        fx:id="stockPrice"
+        text="Stock Price:"
+        GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    
+     
+    <Text
+        fx:id="Dividend"
+        text="Dividend:"
+        GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    
+    <Text
+        fx:id="currency"
+        text="currency:"
+        GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    
+    <Text
+        fx:id="StockExchange"
+        text="Stock Exchange"
+        GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    
+    
+    
+  <HBox spacing="10" alignment="bottom_right" 
+        GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <Button text="Search" onAction="#searchButtonAction" fx:id="searchButton" />
+    <TextField fx:id="stockIn"
+    text="Enter Stock Ticker"/>
+</HBox>
+
+    
+    
+    
+    
+    
+ 
+   
+    
+
+    
+</GridPane>
